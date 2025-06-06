@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("flashcard-container");
 
-  fetch("../data/biologia.json")
+  fetch("biologia.json")
     .then(res => res.json())
     .then(data => {
       data.forEach(card => {
