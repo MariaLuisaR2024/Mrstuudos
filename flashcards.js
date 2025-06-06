@@ -15,3 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 });
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".flashcard")) {
+    e.target.closest(".flashcard").classList.toggle("clicked");
+  }
+});
